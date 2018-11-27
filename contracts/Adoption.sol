@@ -13,3 +13,8 @@ function adopt(uint petId) public returns (uint) {
 
   return petId;
 }
+
+// Retrieving the adopters
+function getAdopters() public view returns (address[16]) {
+  return adopters;
+}

@@ -22,3 +22,4 @@ function testUserCanAdoptPet() public {
 
   Assert.equal(returnedId, expectedPetId, "Adoption of the expected pet should match what is returned.");
 }
+

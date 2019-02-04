@@ -18,9 +18,9 @@ contract TestAdoption {
 
 // Testing the adopt() function
 function testUserCanAdoptPet() public {
-  uint returnedId = adoption.adopt(expectedPetId);
-
-  Assert.equal(returnedId, expectedPetId, "Adoption of the expected pet should match what is returned.");
+ uint returnedId = adoption.adopt(expectedPetId);
+ Assert.equal(returnedId, expectedPetId, "Adoption of the expected pet should match what is returned.");
+ 
 }
 
 // Testing retrieval of a single pet's owner
@@ -37,5 +37,6 @@ function testGetAdopterAddressByPetIdInArray() public {
 
   Assert.equal(adopters[expectedPetId], expectedAdopter, "Owner of the expected pet should be this contract");
 }
+
 
 
